@@ -18,7 +18,7 @@ Layihədə **Risk-Based Testing** (Riskə əsaslanan test) yanaşması tətbiq o
 ## 4. İstifadə Olunacaq Alətlər
 * **Postman:** API testləri üçün.
 * **Jira:** Defektlərin izlənilməsi (Bug Tracking) üçün.
-* **Charles Proxy:** Şəbəkə trafikinin monitorinqi üçün.
+* **Charles Proxy:** Şəbəkə trafikinin yoxlanması üçün.
 
 ## 5. Defekt İdarəetməsi (Defect Management)
 Baqlar Jira-da qeyd olunur və aşağıdakı prioritetlərə bölünür:
