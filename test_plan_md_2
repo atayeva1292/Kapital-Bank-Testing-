@@ -1,0 +1,46 @@
+# 🏦 Kapital Bank (Birbank) Test Plan - v5.4.0
+
+##  1. Layihə Təsviri
+Bu test planı **Kapital Bank** mobil tətbiqinin 2026-cı il Yanvar ayı sprinti (v5.4.0) üçün nəzərdə tutulmuşdur. Sənəd həm yeni funksionallıqların yoxlanılmasını, həm də mövcud sistemin stabilliyini (Regression) təmin etmək üçün tərtib edilib.
+
+##  2. Test Cədvəli (Milestones)
+| Fəaliyyət | Başlanğıc | Bitmə | Status |
+| :--- | :--- | :--- | :--- |
+| Test Case Yazılması | 21.01.2026 | 22.01.2026 |  Tamamlanıb |
+| İlk Test İcrası (Execution) | 23.01.2026 | 26.01.2026 |  İcrada |
+| Regressiya Testləri | 27.01.2026 | 28.01.2026 |  Gözləyir |
+
+##  3. Test Əhatə Dairəsi (Scope)
+###  3.1 In Scope
+* **Login/Auth:** OTP kodun 60 saniyə ərzində çatması və daxil edilməsi.
+* **Transaksiyalar:** Kartdan-karta (P2P) köçürmələr və komissiya hesablanması.
+* **Təhlükəsizlik:** Yanlış PİN daxil edildikdə profilin bloklanması.
+* **UI/UX:** Yeni interfeys elementlərinin dizayna uyğunluğu.
+
+###  3.2 Out of Scope
+* Real ödəniş sistemləri (ancaq Sandbox istifadə olunacaq).
+* 3-cü tərəf xidmət təminatçılarının (məs: Azərişıq, Azərsu) daxili serverləri.
+
+##  4. Test Mühiti (Environment)
+| Resurs | Detallar |
+| :--- | :--- |
+| **Cihazlar** | iPhone 14 (iOS 17), Samsung Galaxy A54 (Android 14) |
+| **Brauzerlər** | Chrome (Latest), Safari (Latest) |
+| **Test Data** | Dummy müştəri məlumatları, Statik OTP (Risk üçün) |
+| **Network** | 4G / Wi-Fi |
+
+##  5. Risklər və Azaltma Planı
+* **Risk:** SMS serverinin gecikməsi testləri dayandıra bilər.
+* **Həlli:** Test mühitində sabit OTP (123456) kodundan istifadə edilməsi.
+* **Risk:** Vaxt azlığı səbəbindən bütün ssenarilərin çatmaması.
+* **Həlli:** Test case-lərin prioritetləşdirilməsi (Öncəlik P0/P1).
+
+##  6. Giriş və Çıxış Meyarları
+* **Entry Criteria:** Build-in Staging mühitinə yüklənməsi və sənədlərin təsdiqi.
+* **Exit Criteria:** Bütün **Blocker** və **Critical** xətaların həlli, testlərin min. 95% keçməsi.
+
+##  7. Komanda və Rollar
+* **QA Engineer:** Fidan Atayeva - 
+
+---
+*Son yenilənmə: 28.01.2026*
