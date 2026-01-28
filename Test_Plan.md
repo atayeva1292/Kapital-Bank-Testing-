@@ -4,7 +4,7 @@ Bu plan Kapital Bank mobil tətbiqinin yanvar ayı buraxılışı üçün nəzə
 
 ## 1. Test Resursları
 * **QA Engineer:** [Fidan Atayeva ]
-* **Test Cihazları:** * iPhone 14 (iOS 17)
+* **Test Cihazları:**  iPhone 14 (iOS 17)
   * Samsung Galaxy A54 (Android 14)
 
 ## 2. Test Cədvəli (Milestones)
